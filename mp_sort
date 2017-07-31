@@ -1,0 +1,14 @@
+#"这是一个冒泡排序函数"
+
+mp_sort<-function(list){
+  for(i in 1:length(list)-1){
+   for(j in 1:(length(list)-1)){
+    if(list[[j]]>list[[j+1]]){
+     a=list[[j]]
+     list[[j]]=list[[j+1]]
+     list[[j+1]]=a
+    }
+   }
+ }
+ print(list)
+}
