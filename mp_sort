@@ -4,9 +4,9 @@ mp_sort<-function(list){
   for(i in 1:length(list)-1){
    for(j in 1:(length(list)-1)){
     if(list[[j]]>list[[j+1]]){
-     a=list[[j]]
-     list[[j]]=list[[j+1]]
-     list[[j+1]]=a
+     a<-list[[j]]
+     list[[j]]<-list[[j+1]]
+     list[[j+1]]<-a
     }
    }
  }
